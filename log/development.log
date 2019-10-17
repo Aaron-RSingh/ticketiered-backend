@@ -26118,3 +26118,428 @@ Processing by EventsController#show as */*
 Completed 200 OK in 8ms (Views: 4.6ms | ActiveRecord: 2.0ms)
 
 
+Started GET "/events/1" for ::1 at 2019-10-17 19:30:26 +0100
+Processing by EventsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (6.6ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:27
+[active_model_serializers]   [1m[36mTicket Load (1.6ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = $1[0m  [["event_id", 1]]
+[active_model_serializers]   ↳ app/controllers/events_controller.rb:28
+[active_model_serializers] No serializer found for resource: #<Ticket id: 1, ticket_class: "Silver", description: "Drinks included", availability: 4, price: 10, event_id: 1, created_at: "2019-10-17 12:23:54", updated_at: "2019-10-17 12:23:54">
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (6.92ms)
+Completed 200 OK in 20ms (Views: 6.0ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/events/1" for ::1 at 2019-10-17 19:30:56 +0100
+Processing by EventsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (1.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:27
+[active_model_serializers]   [1m[36mTicket Load (0.7ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = $1[0m  [["event_id", 1]]
+[active_model_serializers]   ↳ app/controllers/events_controller.rb:28
+[active_model_serializers] No serializer found for resource: #<Ticket id: 1, ticket_class: "Silver", description: "Drinks included", availability: 4, price: 10, event_id: 1, created_at: "2019-10-17 12:23:54", updated_at: "2019-10-17 12:23:54">
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.66ms)
+Completed 200 OK in 10ms (Views: 5.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/events/1" for ::1 at 2019-10-17 19:42:12 +0100
+Processing by EventsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (4.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:27
+[active_model_serializers]   [1m[36mTicket Load (2.0ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = $1[0m  [["event_id", 1]]
+[active_model_serializers]   ↳ app/controllers/events_controller.rb:28
+[active_model_serializers] No serializer found for resource: #<Ticket id: 1, ticket_class: "Silver", description: "Drinks included", availability: 4, price: 10, event_id: 1, created_at: "2019-10-17 12:23:54", updated_at: "2019-10-17 12:23:54">
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (8.21ms)
+Completed 200 OK in 17ms (Views: 7.0ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/events/1" for ::1 at 2019-10-17 19:42:42 +0100
+Processing by EventsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:27
+[active_model_serializers]   [1m[36mTicket Load (0.6ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = $1[0m  [["event_id", 1]]
+[active_model_serializers]   ↳ app/controllers/events_controller.rb:28
+[active_model_serializers] No serializer found for resource: #<Ticket id: 1, ticket_class: "Silver", description: "Drinks included", availability: 4, price: 10, event_id: 1, created_at: "2019-10-17 12:23:54", updated_at: "2019-10-17 12:23:54">
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.63ms)
+Completed 200 OK in 8ms (Views: 4.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/events/1" for ::1 at 2019-10-17 19:42:51 +0100
+Processing by EventsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:27
+[active_model_serializers]   [1m[36mTicket Load (0.9ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = $1[0m  [["event_id", 1]]
+[active_model_serializers]   ↳ app/controllers/events_controller.rb:28
+[active_model_serializers] No serializer found for resource: #<Ticket id: 1, ticket_class: "Silver", description: "Drinks included", availability: 4, price: 10, event_id: 1, created_at: "2019-10-17 12:23:54", updated_at: "2019-10-17 12:23:54">
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.75ms)
+Completed 200 OK in 7ms (Views: 4.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/get-all-events" for ::1 at 2019-10-17 19:42:58 +0100
+Processing by EventsController#all_events as */*
+  [1m[36mEvent Load (1.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/concerns/response.rb:3
+No serializer found for resource: #<Event id: 1, name: "Moose Parade", location: "The Field", date_time: "2019-10-19 00:00:00", description: "Moose grazing ", image_url: "https://cdn.shopify.com/s/files/1/0242/5403/produc...", user_id: 1, created_at: "2019-10-17 11:30:01", updated_at: "2019-10-17 11:30:01">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Event::ActiveRecord_Relation (0.93ms)
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/events/1" for ::1 at 2019-10-17 19:42:58 +0100
+Started GET "/events/2" for ::1 at 2019-10-17 19:42:58 +0100
+Processing by EventsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:27
+[active_model_serializers]   [1m[36mTicket Load (0.7ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = $1[0m  [["event_id", 1]]
+[active_model_serializers]   ↳ app/controllers/events_controller.rb:28
+[active_model_serializers] No serializer found for resource: #<Ticket id: 1, ticket_class: "Silver", description: "Drinks included", availability: 4, price: 10, event_id: 1, created_at: "2019-10-17 12:23:54", updated_at: "2019-10-17 12:23:54">
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.11ms)
+Completed 200 OK in 9ms (Views: 5.3ms | ActiveRecord: 1.7ms)
+
+
+Processing by EventsController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mEvent Load (1.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:27
+[active_model_serializers]   [1m[36mTicket Load (0.9ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = $1[0m  [["event_id", 2]]
+[active_model_serializers]   ↳ app/controllers/events_controller.rb:28
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.36ms)
+Completed 200 OK in 10ms (Views: 4.0ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/events/1" for ::1 at 2019-10-17 19:43:04 +0100
+Processing by EventsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:27
+[active_model_serializers]   [1m[36mTicket Load (1.5ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = $1[0m  [["event_id", 1]]
+[active_model_serializers]   ↳ app/controllers/events_controller.rb:28
+[active_model_serializers] No serializer found for resource: #<Ticket id: 1, ticket_class: "Silver", description: "Drinks included", availability: 4, price: 10, event_id: 1, created_at: "2019-10-17 12:23:54", updated_at: "2019-10-17 12:23:54">
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (6.34ms)
+Completed 200 OK in 10ms (Views: 5.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/events/1" for ::1 at 2019-10-17 19:43:38 +0100
+Processing by EventsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (2.7ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:27
+[active_model_serializers]   [1m[36mTicket Load (0.8ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = $1[0m  [["event_id", 1]]
+[active_model_serializers]   ↳ app/controllers/events_controller.rb:28
+[active_model_serializers] No serializer found for resource: #<Ticket id: 1, ticket_class: "Silver", description: "Drinks included", availability: 4, price: 10, event_id: 1, created_at: "2019-10-17 12:23:54", updated_at: "2019-10-17 12:23:54">
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.29ms)
+Completed 200 OK in 10ms (Views: 5.1ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/events/1" for ::1 at 2019-10-17 19:44:15 +0100
+Processing by EventsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:27
+[active_model_serializers]   [1m[36mTicket Load (0.8ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = $1[0m  [["event_id", 1]]
+[active_model_serializers]   ↳ app/controllers/events_controller.rb:28
+[active_model_serializers] No serializer found for resource: #<Ticket id: 1, ticket_class: "Silver", description: "Drinks included", availability: 4, price: 10, event_id: 1, created_at: "2019-10-17 12:23:54", updated_at: "2019-10-17 12:23:54">
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.94ms)
+Completed 200 OK in 8ms (Views: 4.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/get-all-events" for ::1 at 2019-10-17 19:44:54 +0100
+Processing by EventsController#all_events as */*
+  [1m[36mEvent Load (1.6ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/concerns/response.rb:3
+No serializer found for resource: #<Event id: 1, name: "Moose Parade", location: "The Field", date_time: "2019-10-19 00:00:00", description: "Moose grazing ", image_url: "https://cdn.shopify.com/s/files/1/0242/5403/produc...", user_id: 1, created_at: "2019-10-17 11:30:01", updated_at: "2019-10-17 11:30:01">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Event::ActiveRecord_Relation (1.64ms)
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/events/2" for ::1 at 2019-10-17 19:44:54 +0100
+Started GET "/events/1" for ::1 at 2019-10-17 19:44:54 +0100
+Processing by EventsController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mEvent Load (57.1ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:27
+[active_model_serializers]   [1m[36mTicket Load (5.2ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = $1[0m  [["event_id", 2]]
+[active_model_serializers]   ↳ app/controllers/events_controller.rb:28
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (8.2ms)
+Completed 200 OK in 68ms (Views: 3.7ms | ActiveRecord: 62.3ms)
+
+
+Processing by EventsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:27
+[active_model_serializers]   [1m[36mTicket Load (0.6ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = $1[0m  [["event_id", 1]]
+[active_model_serializers]   ↳ app/controllers/events_controller.rb:28
+[active_model_serializers] No serializer found for resource: #<Ticket id: 1, ticket_class: "Silver", description: "Drinks included", availability: 4, price: 10, event_id: 1, created_at: "2019-10-17 12:23:54", updated_at: "2019-10-17 12:23:54">
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.93ms)
+Completed 200 OK in 9ms (Views: 6.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/events/2" for ::1 at 2019-10-17 19:44:57 +0100
+Processing by EventsController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:27
+[active_model_serializers]   [1m[36mTicket Load (0.5ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = $1[0m  [["event_id", 2]]
+[active_model_serializers]   ↳ app/controllers/events_controller.rb:28
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.18ms)
+Completed 200 OK in 45ms (Views: 2.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/events/2" for ::1 at 2019-10-17 19:46:58 +0100
+Processing by EventsController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:27
+[active_model_serializers]   [1m[36mTicket Load (0.3ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = $1[0m  [["event_id", 2]]
+[active_model_serializers]   ↳ app/controllers/events_controller.rb:28
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.11ms)
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/events/2" for ::1 at 2019-10-17 19:47:00 +0100
+Processing by EventsController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:27
+[active_model_serializers]   [1m[36mTicket Load (0.3ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = $1[0m  [["event_id", 2]]
+[active_model_serializers]   ↳ app/controllers/events_controller.rb:28
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.12ms)
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/events" for ::1 at 2019-10-17 19:47:20 +0100
+Processing by EventsController#index as */*
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/commands/authorize_api_request.rb:17
+  [1m[36mEvent Load (0.9ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/concerns/response.rb:3
+No serializer found for resource: #<Event id: 1, name: "Moose Parade", location: "The Field", date_time: "2019-10-19 00:00:00", description: "Moose grazing ", image_url: "https://cdn.shopify.com/s/files/1/0242/5403/produc...", user_id: 1, created_at: "2019-10-17 11:30:01", updated_at: "2019-10-17 11:30:01">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Event::ActiveRecord_Associations_CollectionProxy (1.11ms)
+Completed 200 OK in 101ms (Views: 12.0ms | ActiveRecord: 22.1ms)
+
+
+Started GET "/events/2" for ::1 at 2019-10-17 19:47:20 +0100
+Started GET "/events/1" for ::1 at 2019-10-17 19:47:20 +0100
+Processing by EventsController#show as */*
+  Parameters: {"id"=>"2"}
+Processing by EventsController#show as */*
+  [1m[36mEvent Load (1.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Parameters: {"id"=>"1"}
+  ↳ app/controllers/events_controller.rb:27
+  [1m[36mEvent Load (3.8ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:27
+[active_model_serializers]   [1m[36mTicket Load (12.4ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = $1[0m  [["event_id", 2]]
+[active_model_serializers]   ↳ app/controllers/events_controller.rb:28
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (14.68ms)
+Completed 200 OK in 19ms (Views: 3.3ms | ActiveRecord: 13.9ms)
+
+
+Started GET "/user-info" for ::1 at 2019-10-17 19:47:20 +0100
+[active_model_serializers]   [1m[36mTicket Load (9.5ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = $1[0m  [["event_id", 1]]
+[active_model_serializers]   ↳ app/controllers/events_controller.rb:28
+[active_model_serializers] No serializer found for resource: #<Ticket id: 1, ticket_class: "Silver", description: "Drinks included", availability: 4, price: 10, event_id: 1, created_at: "2019-10-17 12:23:54", updated_at: "2019-10-17 12:23:54">
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (15.85ms)
+Completed 200 OK in 29ms (Views: 7.5ms | ActiveRecord: 13.4ms)
+
+
+Processing by EventsController#user_info as */*
+  [1m[36mUser Load (7.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/commands/authorize_api_request.rb:17
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.63ms)
+Completed 200 OK in 13ms (Views: 3.6ms | ActiveRecord: 7.0ms)
+
+
+Started POST "/events/2/tickets" for ::1 at 2019-10-17 19:47:43 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/events/2/tickets"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/events/2" for ::1 at 2019-10-17 19:47:43 +0100
+Processing by EventsController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:27
+[active_model_serializers]   [1m[36mTicket Load (0.5ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = $1[0m  [["event_id", 2]]
+[active_model_serializers]   ↳ app/controllers/events_controller.rb:28
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.26ms)
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/events/1" for ::1 at 2019-10-17 19:49:26 +0100
+Processing by EventsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:27
+[active_model_serializers]   [1m[36mTicket Load (0.8ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = $1[0m  [["event_id", 1]]
+[active_model_serializers]   ↳ app/controllers/events_controller.rb:28
+[active_model_serializers] No serializer found for resource: #<Ticket id: 1, ticket_class: "Silver", description: "Drinks included", availability: 4, price: 10, event_id: 1, created_at: "2019-10-17 12:23:54", updated_at: "2019-10-17 12:23:54">
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.54ms)
+Completed 200 OK in 8ms (Views: 4.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/events" for ::1 at 2019-10-17 19:49:47 +0100
+Processing by EventsController#index as */*
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/commands/authorize_api_request.rb:17
+  [1m[36mEvent Load (1.5ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/concerns/response.rb:3
+No serializer found for resource: #<Event id: 1, name: "Moose Parade", location: "The Field", date_time: "2019-10-19 00:00:00", description: "Moose grazing ", image_url: "https://cdn.shopify.com/s/files/1/0242/5403/produc...", user_id: 1, created_at: "2019-10-17 11:30:01", updated_at: "2019-10-17 11:30:01">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Event::ActiveRecord_Associations_CollectionProxy (1.12ms)
+Completed 200 OK in 9ms (Views: 4.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/events/1" for ::1 at 2019-10-17 19:49:47 +0100
+Started GET "/events/2" for ::1 at 2019-10-17 19:49:47 +0100
+Started GET "/user-info" for ::1 at 2019-10-17 19:49:47 +0100
+Processing by EventsController#show as */*
+  Parameters: {"id"=>"1"}
+Processing by EventsController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:27
+  [1m[36mEvent Load (4.0ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mTicket Load (0.6ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = $1[0m  [["event_id", 2]]
+[active_model_serializers]   ↳ app/controllers/events_controller.rb:28
+  ↳ app/controllers/events_controller.rb:27
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.9ms)
+Completed 200 OK in 8ms (Views: 5.2ms | ActiveRecord: 1.3ms)
+
+
+[active_model_serializers]   [1m[36mTicket Load (5.9ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = $1[0m  [["event_id", 1]]
+[active_model_serializers]   ↳ app/controllers/events_controller.rb:28
+[active_model_serializers] No serializer found for resource: #<Ticket id: 1, ticket_class: "Silver", description: "Drinks included", availability: 4, price: 10, event_id: 1, created_at: "2019-10-17 12:23:54", updated_at: "2019-10-17 12:23:54">
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (10.65ms)
+Completed 200 OK in 19ms (Views: 5.7ms | ActiveRecord: 10.0ms)
+
+
+Processing by EventsController#user_info as */*
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/commands/authorize_api_request.rb:17
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.36ms)
+Completed 200 OK in 5ms (Views: 0.9ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/authenticate" for ::1 at 2019-10-17 19:49:53 +0100
+Processing by AuthenticationController#authenticate as */*
+  Parameters: {"username"=>"Goose", "password"=>"[FILTERED]", "authentication"=>{"username"=>"Goose", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Goose"], ["LIMIT", 1]]
+  ↳ app/commands/authenticate_user.rb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Goose"], ["LIMIT", 1]]
+  ↳ app/commands/authenticate_user.rb:18
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 200 OK in 585ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/get-all-events" for ::1 at 2019-10-17 19:49:53 +0100
+Processing by EventsController#all_events as */*
+  [1m[36mEvent Load (1.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/concerns/response.rb:3
+No serializer found for resource: #<Event id: 1, name: "Moose Parade", location: "The Field", date_time: "2019-10-19 00:00:00", description: "Moose grazing ", image_url: "https://cdn.shopify.com/s/files/1/0242/5403/produc...", user_id: 1, created_at: "2019-10-17 11:30:01", updated_at: "2019-10-17 11:30:01">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Event::ActiveRecord_Relation (1.23ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/events/1" for ::1 at 2019-10-17 19:49:53 +0100
+Started GET "/events/2" for ::1 at 2019-10-17 19:49:53 +0100
+Processing by EventsController#show as */*
+Processing by EventsController#show as */*
+  Parameters: {"id"=>"2"}
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:27
+  [1m[36mEvent Load (2.9ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mTicket Load (0.6ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = $1[0m  [["event_id", 2]]
+  ↳ app/controllers/events_controller.rb:27
+[active_model_serializers]   ↳ app/controllers/events_controller.rb:28
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (8.07ms)
+Completed 200 OK in 12ms (Views: 8.3ms | ActiveRecord: 1.3ms)
+
+
+[active_model_serializers]   [1m[36mTicket Load (2.3ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = $1[0m  [["event_id", 1]]
+[active_model_serializers]   ↳ app/controllers/events_controller.rb:28
+[active_model_serializers] No serializer found for resource: #<Ticket id: 1, ticket_class: "Silver", description: "Drinks included", availability: 4, price: 10, event_id: 1, created_at: "2019-10-17 12:23:54", updated_at: "2019-10-17 12:23:54">
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (30.14ms)
+Completed 200 OK in 38ms (Views: 29.3ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/events/1" for ::1 at 2019-10-17 19:49:55 +0100
+Processing by EventsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (1.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:27
+[active_model_serializers]   [1m[36mTicket Load (0.6ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = $1[0m  [["event_id", 1]]
+[active_model_serializers]   ↳ app/controllers/events_controller.rb:28
+[active_model_serializers] No serializer found for resource: #<Ticket id: 1, ticket_class: "Silver", description: "Drinks included", availability: 4, price: 10, event_id: 1, created_at: "2019-10-17 12:23:54", updated_at: "2019-10-17 12:23:54">
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.56ms)
+Completed 200 OK in 9ms (Views: 5.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/get-all-events" for ::1 at 2019-10-17 19:51:08 +0100
+Processing by EventsController#all_events as */*
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/concerns/response.rb:3
+No serializer found for resource: #<Event id: 1, name: "Moose Parade", location: "The Field", date_time: "2019-10-19 00:00:00", description: "Moose grazing ", image_url: "https://cdn.shopify.com/s/files/1/0242/5403/produc...", user_id: 1, created_at: "2019-10-17 11:30:01", updated_at: "2019-10-17 11:30:01">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Event::ActiveRecord_Relation (0.69ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/events/1" for ::1 at 2019-10-17 19:51:08 +0100
+Started GET "/events/2" for ::1 at 2019-10-17 19:51:08 +0100
+Processing by EventsController#show as */*
+  Parameters: {"id"=>"1"}
+Processing by EventsController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mEvent Load (2.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:27
+  [1m[36mEvent Load (3.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:27
+[active_model_serializers]   [1m[36mTicket Load (2.5ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = $1[0m  [["event_id", 2]]
+[active_model_serializers]   ↳ app/controllers/events_controller.rb:28
+[active_model_serializers]   [1m[36mTicket Load (1.3ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = $1[0m  [["event_id", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (5.41ms)
+[active_model_serializers]   ↳ app/controllers/events_controller.rb:28
+Completed 200 OK in 11ms (Views: 4.2ms | ActiveRecord: 5.0ms)
+
+
+[active_model_serializers] No serializer found for resource: #<Ticket id: 1, ticket_class: "Silver", description: "Drinks included", availability: 4, price: 10, event_id: 1, created_at: "2019-10-17 12:23:54", updated_at: "2019-10-17 12:23:54">
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (7.18ms)
+Completed 200 OK in 16ms (Views: 6.6ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/events/1" for ::1 at 2019-10-17 19:51:31 +0100
+Processing by EventsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.9ms)[0m  [1m[34mSELECT  "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:27
+[active_model_serializers]   [1m[36mTicket Load (0.6ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."event_id" = $1[0m  [["event_id", 1]]
+[active_model_serializers]   ↳ app/controllers/events_controller.rb:28
+[active_model_serializers] No serializer found for resource: #<Ticket id: 1, ticket_class: "Silver", description: "Drinks included", availability: 4, price: 10, event_id: 1, created_at: "2019-10-17 12:23:54", updated_at: "2019-10-17 12:23:54">
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.5ms)
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 1.5ms)
+
+
