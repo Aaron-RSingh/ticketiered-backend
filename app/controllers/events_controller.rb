@@ -1,6 +1,7 @@
 class EventsController < ApplicationController
-  before_action :set_event, only: [:show, :update, :destroy]
-  skip_before_action :authenticate_request, only: [:all_events]
+  # authorization only: [:show]
+  before_action :set_event, only: [:update, :destroy]
+  skip_before_action :authenticate_request, only: [:all_events, :show]
 
   def index
     @events = current_user.events
@@ -23,7 +24,9 @@ class EventsController < ApplicationController
   end
 
   def show
-    json_response(@event)
+    @event = Event.find_by(id: params[:id])
+    render json: {event: EventsSerializer.new(@event)}
+    # json_response(@event)
   end
 
   def update
@@ -39,7 +42,7 @@ class EventsController < ApplicationController
   private
 
   def event_params
-    params.permit(:name, :location, :date_time, :description, :image_url)
+    params.permit(:name, :location, :date_time, :description, :image_url, :id)
   end
 
   def set_event

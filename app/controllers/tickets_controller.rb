@@ -1,6 +1,7 @@
   class TicketsController < ApplicationController
-    before_action :set_ticket, only: [:show, :update, :destroy]
+    before_action :set_ticket, only: [:update, :destroy]
     before_action :set_event, only: [:create, :index]
+    skip_before_action :authenticate_request, only: [:show, :index]
 
     def index
       @tickets = @event.tickets
@@ -13,6 +14,7 @@
     end
 
     def show
+      @ticket = Ticket.find_by(id: params[:id])
       json_response(@ticket)
     end
 
@@ -29,7 +31,7 @@
     private
 
     def ticket_params
-      params.permit(:ticket_class, :description, :availability, :price, :event_id)
+      params.permit(:ticket_class, :description, :availability, :price, :event_id, :id)
     end
 
     def set_event
