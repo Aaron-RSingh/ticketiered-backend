@@ -18,7 +18,10 @@ class UserticketsController < ApplicationController
     end
     
     def create
-      @userticket = current_user.usertickets.create!(userticket_params)
+      user = user_from_token
+      ticket = Ticket.find_by(id: params[:ticket_id])
+      @userticket = Userticket.create(user_id: user.id ,ticket_id: ticket.id)
+      byebug
       json_response(@userticket, :created)
     end
   

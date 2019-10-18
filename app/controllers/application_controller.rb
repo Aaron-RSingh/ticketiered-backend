@@ -12,4 +12,12 @@ private
       render json: { error: 'Not Authorized' }, status: 401 unless @current_user
   end
 
+  def user_from_token
+    begin
+      @current_user = AuthorizeApiRequest.call(request.headers).result
+    rescue
+      {}
+    end
+  end
+
 end
