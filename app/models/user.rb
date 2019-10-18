@@ -3,5 +3,7 @@ class User < ApplicationRecord
 
   has_many :events
 
+  has_many :usertickets
+
   validates_presence_of  :username, :password
 end
