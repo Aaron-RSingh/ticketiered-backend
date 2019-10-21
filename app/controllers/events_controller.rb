@@ -22,7 +22,7 @@ class EventsController < ApplicationController
 
   def user_info
     @user = current_user
-    json_response(@user)
+    json_response( @user)
   end
   
   def create
