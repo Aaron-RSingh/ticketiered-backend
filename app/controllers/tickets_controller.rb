@@ -15,7 +15,8 @@
 
     def show
       @ticket = Ticket.find_by(id: params[:id])
-      json_response(@ticket)
+      render json: {ticket: TicketsSerializer.new(@ticket)}
+      # json_response(@ticket)
     end
 
     def update

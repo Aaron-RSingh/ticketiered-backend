@@ -1,6 +1,6 @@
 class UserticketsController < ApplicationController
-    # before_action :set_event, only: [:update, :destroy]
-    # skip_before_action :authenticate_request, only: [:all_events, :show]
+    before_action :set_event, only: [:update, :destroy]
+    skip_before_action :authenticate_request, only: [:index, :create, :show]#[:all_events, :show]
   
     def index
       @usertickets = current_user.usertickets
@@ -21,13 +21,13 @@ class UserticketsController < ApplicationController
       user = user_from_token
       ticket = Ticket.find_by(id: params[:ticket_id])
       @userticket = Userticket.create(user_id: user.id ,ticket_id: ticket.id)
-      byebug
+      # byebug
       json_response(@userticket, :created)
     end
   
     def show
       @userticket = Userticket.find_by(id: params[:id])
-      render json: {userticket: EventsSerializer.new(@event)}
+      render json: {userticket: EventsSerializer.new(@userticket)}
     end
   
     def update

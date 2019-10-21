@@ -1,7 +1,7 @@
 class EventsController < ApplicationController
   # authorization only: [:show]
   before_action :set_event, only: [:update, :destroy]
-  skip_before_action :authenticate_request, only: [:all_events, :show]
+  skip_before_action :authenticate_request, only: [:all_events, :show, :filtered_events]
 
   def index
     @events = current_user.events
@@ -11,6 +11,13 @@ class EventsController < ApplicationController
   def all_events
     @events = Event.all
     json_response(@events)
+  end
+
+  def filtered_events
+    # byebug
+    filtered_events = Event.filter_events(params[:filter])
+
+    render json: filtered_events, each_serializer: EventsSerializer
   end
 
   def user_info

@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:show, :update, :destroy]
-  skip_before_action :authenticate_request, only: [:create]
+  before_action :set_user, only: [:update, :destroy]
+  skip_before_action :authenticate_request, only: [:create, :show]
 
   def index
     @users = User.all
@@ -13,7 +13,11 @@ class UsersController < ApplicationController
   end
 
   def show
-    json_response(@user)
+    # @event = Event.find_by(id: params[:id])
+    # render json: {event: EventsSerializer.new(@event)}
+    @user = User.find_by(id: params[:id])
+    # json_response(@user)
+    render json: {event: UsersSerializer.new(@user)}
   end
 
   def update
